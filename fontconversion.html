@@ -5,22 +5,22 @@
 <title>Font Unit Conversion Tool</title>
 <meta name="description" content="Font Unit Conversion Tool" />
 <meta name="author" content="PXLVZN" />
-<style type="text/css">
-body{font-size:16px}
-.textfield {width:40px;padding:2px;margin-right:5px;font-size:100%;}
-#result {font-size:125%;font-weight:700;}
-</style>
+<link rel="stylesheet" href="_css/base.css" type="text/css" media="all">
 </head>
 <body>
-<div>
-<header>
+<!-- Page Wrapper -->
+<div id="pagewrapper">
+
+<!-- Header -->
+<header id="masthead">
 <h1>Font Unit Conversion Tool</h1>
 </header>
-<section>
-<article>
+<!-- Header End -->
 
-<input id="basesize" class="textfield" value="">
-<select id="formula">
+<!-- Content -->
+<section id="sizeconverter">
+<input id="basesize" value="Enter a number to convert"><br>
+<select id="formula" title="NOTE: PX to EM, &#37; and EM, &#37; to PX conversions use a baseline font size of 16px; as this is the default font size of most browsers.">
     <option value="">Convert...</option>
     <option value="empx">EM to PX</option>
     <option value="empercent">EM to &#37;</option>
@@ -31,13 +31,22 @@ body{font-size:16px}
     <option value="pxpercent">PX to &#37;</option>
 	<option value="ptpx">PT to PX</option>
 </select>
-
 <p id="result"> </p>
-
-<p>NOTE: px to em, &#37; and em, &#37; to px conversions use a baseline font size of 16px; as this is the defualt font size of most browsers.</p>
-</article>
 </section>
+<!-- Content End-->
+
+<!-- Footer -->
+<footer>
+<p>&copy; PXLVZN</p>
+<p><a href="https://github.com/pxlvzn/fontsizeconverter" target="_blank"> Project on GitHub</a></p>
+</footer>
+<!-- Footer End -->
+
 </div>
+<!-- Page Wrapper End -->
+
+<!-- Scripts -->
 <script src="_js/core.js" type="text/javascript"></script>
+<!-- Scripts End-->
 </body>
 </html>
