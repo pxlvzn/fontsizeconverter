@@ -8,6 +8,7 @@
 <style type="text/css">
 body{font-size:16px}
 .textfield {width:40px;padding:2px;margin-right:5px;font-size:100%;}
+#result {font-size:125%;font-weight:700;}
 </style>
 </head>
 <body>
@@ -15,20 +16,27 @@ body{font-size:16px}
 <header>
 <h1>Font Unit Conversion Tool</h1>
 </header>
-
 <section>
-<h2> Pixel &lsaquo;&mdash;&rsaquo; Point Conversion</h2>
-<p id="result"> </p>
-<input id="basesize" class="textfield" value="">
-<select id="fontunit">
-    <option value="">Select A Unit</option>
-    <option id="pixel" value="px">PX</option>
-    <option id="points" value="pt">PT</option>
-</select>
-<br>
-<button id="btn_convert">Convert</button>
-</section>
+<article>
 
+<input id="basesize" class="textfield" value="">
+<select id="formula">
+    <option value="">Convert...</option>
+    <option value="empx">EM to PX</option>
+    <option value="empercent">EM to &#37;</option>
+    <option value="percentpx">&#37; to PX</option>
+    <option value="percentem">&#37; to EM</option>
+    <option value="pxpt">PX to PT</option>
+    <option value="pxem">PX to EM</option>
+    <option value="pxpercent">PX to &#37;</option>
+	<option value="ptpx">PT to PX</option>
+</select>
+
+<p id="result"> </p>
+
+<p>NOTE: px to em, &#37; and em, &#37; to px conversions use a baseline font size of 16px; as this is the defualt font size of most browsers.</p>
+</article>
+</section>
 </div>
 <script src="_js/core.js" type="text/javascript"></script>
 </body>
