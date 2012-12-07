@@ -78,19 +78,19 @@
 /* =============================================================================
    CUSTOM CSS
    ========================================================================== */
-  body{font-family:'PTSansRegular',arial, sans-serif;color:#000;background-color:#fff}
-  p{margin-bottom:10px}
-  h1{font-size:300%}
-
+    body{font-family:'PTMonoRegular',arial, sans-serif;color:#444;background-color:#fff}
+    p{margin-bottom:10px}
+    h1{font-size:300%}
+    a{color:#fc4dd3;}
     #pagewrapper{margin:0 auto; text-align:center}
-    section#sizeconverter, header#masthead {padding:20px 10px 0 10px;background-color:#eee}
-    header#masthead h1{text-transform:uppercase;border-bottom:1px solid #ddd;}
-    section#sizeconverter input{width:150px;padding:2px;margin-right:5px;font-size:100%;text-align:center}
-    section#sizeconverter{padding:25px;}
-    section#sizeconverter #result {font-size:150%;font-weight:700;}
-    section#sizeconverter select{font-size:200% !important;margin-bottom:25px;cursor:help}
-    footer{padding:20px 10px; border-top:1px solid #ddd;}
-    footer p{font-size:75%}
+    section#sizeconverter, header#masthead {padding:20px 10px}
+    header#masthead h1{text-transform:uppercase}
+    section#sizeconverter{padding:20px 0 10px 0}
+    section#sizeconverter input{width:200px;padding:4px;margin-right:5px;font-size:125%;text-align:center;border:1px solid #ccc;border-radius:3px}
+    section#sizeconverter #result {margin-top:20px;font-size:150%;font-weight:700}
+    section#sizeconverter select{font-size:112.5% !important;padding:4px 4px 2px 4px;cursor:help}
+    footer{padding:5px 10px}
+    footer p{font-size:87.5%}
       
 /* =============================================================================
    PRINT STYLES
