@@ -17,7 +17,7 @@ var pxlvznTools = {
             return false;
         }
     },
-    // Font Unit Conversion Function
+    // Font Unit Conversion Functionoints
     convertUnit : function() {
         // Baseline font unit is pixels
         var baselineFontSize = 16;
