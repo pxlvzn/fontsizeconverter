@@ -5,6 +5,7 @@
 <title>Font Unit Conversion Tool</title>
 <meta name="description" content="Font Unit Conversion Tool" />
 <meta name="author" content="PXLVZN" />
+<link rel="stylesheet" href="_css/font.css" type="text/css" media="all">
 <link rel="stylesheet" href="_css/base.css" type="text/css" media="all">
 </head>
 <body>
@@ -20,7 +21,7 @@
 <!-- Content -->
 <section id="sizeconverter">
 <input id="basesize" value="Enter a Number">
-<select id="formula" title="NOTE: PX to EM, &#37; and EM, &#37; to PX conversions use a baseline font size of 16px; as this is the default font size of most browsers.">
+<select id="formula">
     <option value="">Convert...</option>
     <option value="empx">EM to PX</option>
     <option value="empercent">EM to &#37;</option>
@@ -31,14 +32,16 @@
     <option value="pxpercent">PX to &#37;</option>
 	<option value="ptpx">PT to PX</option>
 </select>
-<p id="result"> </p>
+<p class="help" title="NOTE: PX to EM, &#37; and EM, &#37; to PX conversions use a baseline font size of 16px; as this is the default font size of most browsers.">?</p>
+<div id="result"> </div>
 </section>
 <!-- Content End-->
 
 <!-- Footer -->
 <footer>
-<p>&copy; PXLVZN</p>
-<p><a href="https://github.com/pxlvzn/fontsizeconverter" target="_blank"> View on GitHub</a></p>
+<p><span class="symbl">&copy;</span> PXLVZN</p>
+<a href="https://github.com/pxlvzn/fontsizeconverter" target="_blank"><img src="_img/icon_github.png" height="32" width="32" alt="" title="Visit project on GitHub"></a>
+
 </footer>
 <!-- Footer End -->
 
