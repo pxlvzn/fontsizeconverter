@@ -2,50 +2,38 @@
 /* =============================================================================
   WEB FONTS
  ========================================================================== */
-  @font-face {
-  font-family: 'PTSansBold';
-  src: url('../_fonts/PTS75F-webfont.eot');
-  src: local('☺'),
-  url('PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../_fonts/PTS75F-webfont.woff') format('woff'),
-  url('../_fonts/PTS75F-webfont.ttf') format('truetype'),
-  url('../_fonts/PTS75F-webfont.svg#PTSansBold') format('svg');
-  font-weight: 400;
-  font-style: normal;
-  }
-  
-  @font-face {
-  font-family: 'PTSansItalic';
-  src: url('../_fonts/PTS56F-webfont.eot');
-  src: local('☺'),
-  url('../_fonts/PTS56F-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../_fonts/PTS56F-webfont.woff') format('woff'),
-  url('../_fonts/PTS56F-webfont.ttf') format('truetype'),
-  url('../_fonts/PTS56F-webfont.svg#PTSansItalic') format('svg');
-  font-weight: 400;
-  font-style: normal;
-  }
-  
-  @font-face {
-  font-family: 'PTSansRegular';
-  src: url('../_fonts/PTS55F-webfont.eot');
-  src: local('☺'),
-  url('../_fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../_fonts/PTS55F-webfont.woff') format('woff'),
-  url('../_fonts/PTS55F-webfont.ttf') format('truetype'),
-  url('../_fonts/PTS55F-webfont.svg#PTSansRegular') format('svg');
-  font-weight: 400;
-  font-style: normal;
-  }
-  
-  @font-face {
-  font-family: 'PTMonoRegular';
-  src: url('../_fonts/PTM55FT-webfont.eot');
-  src: local('☺'), 
-  url('../_fonts/PTM55FT-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../_fonts/PTM55FT-webfont.woff') format('woff'),
-  url('../_fonts/PTM55FT-webfont.ttf') format('truetype'),
-  url('../_fonts/PTM55FT-webfont.svg#PTMonoRegular') format('svg');
-  font-weight: 400;
-  font-style: normal;
-  }
+@font-face {
+font-family: 'RobotoRegular';
+src: url('../_fonts/Roboto-Regular-webfont.eot');
+src: local('☺'),
+url('../_fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../_fonts/Roboto-Regular-webfont.woff') format('woff'),
+url('../_fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+url('../_fonts/Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+font-weight: 400;
+font-style: normal
+}
+
+@font-face {
+font-family: 'RobotoBlack';
+src: url('../_fonts/Roboto-Black-webfont.eot');
+src: local('☺'),
+url('../_fonts/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+url('../_fonts/Roboto-Black-webfont.woff') format('woff'),
+url('../_fonts/Roboto-Black-webfont.ttf') format('truetype'),
+url('../_fonts/Roboto-Black-webfont.svg#RobotoBlack') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+font-family: 'PTMonoRegular';
+src: url('../_fonts/PTM55FT-webfont.eot');
+src: local('☺'), 
+url('../_fonts/PTM55FT-webfont.eot?#iefix') format('embedded-opentype'),
+url('../_fonts/PTM55FT-webfont.woff') format('woff'),
+url('../_fonts/PTM55FT-webfont.ttf') format('truetype'),
+url('../_fonts/PTM55FT-webfont.svg#PTMonoRegular') format('svg');
+font-weight: 400;
+font-style: normal
+}

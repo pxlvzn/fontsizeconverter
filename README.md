@@ -1,13 +1,13 @@
-Font Size Conversion Tool
+Font Unit Conversion Tool
 ===========================
 
-Tool for converting font sizes from one unit type to another. 
+Tool for converting font sizes from one unit to another. 
 
-Unit types include: px, pt, em and %
+Units include: px, pt, em and %
 
 NOTES:
 
-1.) PX to EM, % and EM, %  to PX conversions use a baseline font size of 16px. As this is the default font size of most browsers.
+1.) Pixel unit conversions use a baseline font size of 16px; as this is the default font size of most browsers. This will be adjustable in futre versions.
 
 2.) Round up ONLY when the remainder at the first decimel place is 5 or greater.
 

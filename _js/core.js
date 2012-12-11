@@ -65,7 +65,7 @@ var pxlvznTools = {
                 // alert('Please select a font unit.')
             };
         } else {
-            document.getElementById('result').innerHTML = '<p class="error">Please enter a number.</p>';
+            document.getElementById('result').innerHTML = '<p class="error">Please enter a number, only.</p>';
         };
     },
     // Function to clear input field of preset/default value and reset select menu index to zero.
