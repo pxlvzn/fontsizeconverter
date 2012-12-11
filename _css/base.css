@@ -1,9 +1,10 @@
 @charset "UTF-8";
 /* =============================================================================
-  BASELINE CSS
- ========================================================================== */
+   BASELINE CSS
+   ========================================================================== */
    /* RESET */
    html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+  
    /* TAGS */
    *{padding:0;margin:0}
    body{font-size:16px}
@@ -40,8 +41,8 @@
    table {border-collapse:collapse;border-spacing:0}
  
  /* =============================================================================
-  UTILITY CLASSES
- ========================================================================== */
+    UTILITY CLASSES
+    ========================================================================== */
     /* Positioning */
     .clearfix:before,.clearfix:after{content:" ";display:table}
     .clearfix:after{clear: both}
@@ -76,22 +77,22 @@
 /* =============================================================================
    CUSTOM CSS
    ========================================================================== */
-    body{color:#444;background-color:#fff;font-family:'RobotoRegular',arial, sans-serif}
-    a{color:#fc4dd3}
-    .help {margin-left:5px;padding:5px 8px 0 8px;background-color:#666;color:#fff;font-weight:700;display:inline;cursor:help}
-    .help:hover {background-color:#000}
-    #pagewrapper{margin:0 auto; text-align:center}
-    header#masthead, section#sizeconverter {padding:10px}
-    header#masthead h1{margin:15px 0 0 0;color:#999;font-size:400%;font-family:'RobotoBlack',arial, sans-serif;text-transform:uppercase}
-    section#sizeconverter{padding:20px 0 10px 0}
-    section#sizeconverter input{width:190px;padding:4px;margin-right:5px;font-size:125%;font-family:'PTMonoRegular','courier',monospace;text-align:center;border:1px solid #ccc;border-radius:3px}
-    section#sizeconverter select{padding:4px 4px 2px 4px;font-family:'PTMonoRegular','courier',monospace;font-size:112.5% !important}
-    section#sizeconverter #result {margin:20px auto 0 auto;width:450px;font-size:150%;font-weight:700}
-    section#sizeconverter #result p{padding:5px 0 3px 0;background-color:#bdffc5;border:1px solid #00a213}
-    section#sizeconverter #result p.error{background-color:#ffdcdc;border:1px solid #ff0000}
-    footer{padding:5px 10px;font-weight:700;}
-    footer .symbl{font-size:112.5%}
-    footer p{margin:0 0 5px 0;font-size:75%}
+   body{color:#444;background-color:#fff;font-family:'RobotoRegular',arial, sans-serif}
+   a{color:#fc4dd3}
+   .help {margin-left:5px;padding:5px 8px 0 8px;background-color:#666;color:#fff;font-weight:700;display:inline;cursor:help}
+   .help:hover {background-color:#000}
+   #pagewrapper{margin:0 auto; text-align:center}
+   header#masthead, section#sizeconverter {padding:10px}
+   header#masthead h1{margin:15px 0 0 0;color:#999;font-size:400%;font-family:'RobotoBlack',arial, sans-serif;text-transform:uppercase}
+   section#sizeconverter{padding:20px 0 10px 0}
+   section#sizeconverter input{width:190px;padding:4px;margin-right:5px;font-size:125%;font-family:'PTMonoRegular','courier',monospace;text-align:center;border:1px solid #ccc;border-radius:3px}
+   section#sizeconverter select{padding:4px 4px 2px 4px;font-family:'PTMonoRegular','courier',monospace;font-size:112.5% !important}
+   section#sizeconverter #result {margin:20px auto 0 auto;width:450px;font-size:150%;font-weight:700}
+   section#sizeconverter #result p{padding:5px 0 3px 0;background-color:#bdffc5;border:1px solid #00a213}
+   section#sizeconverter #result p.error{background-color:#ffdcdc;border:1px solid #ff0000}
+   footer{padding:5px 10px;font-weight:700;}
+   footer .symbl{font-size:112.5%}
+   footer p{margin:0 0 5px 0;font-size:75%}
       
 /* =============================================================================
    PRINT STYLES
