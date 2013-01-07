@@ -4,6 +4,7 @@
 
 // Namespace to avoid collisions
 var pxlvznTools = {
+    baselineFontSize: 14,
     // Function to handle UI events
     addEvent : function(obj, evType, fn) {
         if (obj.addEventListener) {
@@ -14,13 +15,12 @@ var pxlvznTools = {
             var forIE = obj.attachEvent("on" + evType, fn);
             return forIE;
         } else {
-            return false;
-        }
+            return false;}
     },
     // Font Unit Conversion Functionoints
     convertUnit : function() {
         // Baseline font unit is pixels
-        var baselineFontSize = 16;
+        var baselineFontSize = document.getElementById('baseline').value;
         // Number entered by the user
         var valueToConvert = document.getElementById('basesize').value;
         // conversion formula selected by the user
@@ -72,6 +72,7 @@ var pxlvznTools = {
     clearField : function() {
         this.value === this.defaultValue ? this.value = '' : null;
         document.getElementById('formula').selectedIndex = 0;
+        document.getElementById('baseline').selectedIndex = 0;
     },
     // Function to reset input field to preset/default value
     resetField : function() {
@@ -81,5 +82,5 @@ var pxlvznTools = {
 // Initialze functions to call upon user action(s)
 pxlvznTools.addEvent(document.getElementById('basesize'), 'focus', pxlvznTools.clearField);
 pxlvznTools.addEvent(document.getElementById('basesize'), 'blur', pxlvznTools.resetField);
-pxlvznTools.addEvent(document.getElementById('formula'), 'change', pxlvznTools.convertUnit);
+pxlvznTools.addEvent(document.getElementById('btn_convert'), 'click', pxlvznTools.convertUnit);
 //EOF

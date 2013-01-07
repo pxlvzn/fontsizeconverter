@@ -17,31 +17,43 @@
 <h1>Font Unit Conversion Tool</h1>
 </header>
 <!-- Header End -->
+<p id="description">Tool for converting font sizes from one unit to another.</p>
 
+<p class="notes">
+- Pixel unit conversions use a baseline font size of 14px; as this is the default font size of most browsers/HTMLframeworks.<br>
+- Round up if the first decimel place is 5 or greater; NEVER round down.<br>
+</p>
+<hr>
 <!-- Content -->
 <section id="sizeconverter">
-<input id="basesize" value="Enter a Number">
-<select id="formula">
-    <option value="">Convert...</option>
-    <option value="empx">EM to PX</option>
-    <option value="empercent">EM to &#37;</option>
-    <option value="percentpx">&#37; to PX</option>
-    <option value="percentem">&#37; to EM</option>
-    <option value="pxpt">PX to PT</option>
-    <option value="pxem">PX to EM</option>
-    <option value="pxpercent">PX to &#37;</option>
-	<option value="ptpx">PT to PX</option>
-</select>
-<p class="help" title="NOTE: Pixel unit conversions use a baseline font size of 16px; as this is the default font size of most browsers.">?</p>
 <div id="result"> </div>
+<input id="basesize" value="Enter a Number"><br>
+<select id="formula">
+    <option value="">Select Units to Convert...</option>
+    <option value="empx">EM to PX Units</option>
+    <option value="empercent">EM to &#37; Units</option>
+    <option value="percentpx">&#37; to PX Units</option>
+    <option value="percentem">&#37; to EM Units</option>
+    <option value="pxpt">PX to PT Units</option>
+    <option value="pxem">PX to EM Units</option>
+    <option value="pxpercent">PX to &#37; Units</option>
+	<option value="ptpx">PT to PX Units</option>
+</select><br>
+<select id="baseline">
+    <option value="14">Select Base Font Size...</option>
+    <option value="12">12px Baseline</option>
+    <option value="14">14px Baseline</option>
+    <option value="16">16px Baseline</option>
+</select><br>
+<button id="btn_convert">Convert</button>
+
 </section>
 <!-- Content End-->
-
+<hr>
 <!-- Footer -->
-<footer>
+<footer id="footer">
 <p><span class="symbl">&copy;</span> PXLVZN</p>
 <a href="https://github.com/pxlvzn/fontsizeconverter" target="_blank"><img src="_img/icon_github.png" height="32" width="32" alt="" title="Visit project on GitHub"></a>
-
 </footer>
 <!-- Footer End -->
 
