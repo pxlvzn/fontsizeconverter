@@ -4,6 +4,7 @@ Font Unit Conversion Tool
 Tool for converting screen font sizes from one unit (px, pt, em or %) to another.
 
 NOTES:
+
 -Pixel unit conversions use a baseline font size of 14px; as this is the default font size of most browsers/HTMLframeworks.
 
 -Round up if the first decimel place is 5 or greater; NEVER round down.
