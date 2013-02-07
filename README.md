@@ -13,6 +13,7 @@ NOTES:
 
 -DPI refers to print and PPI to pixel display. 
 
+
 PRINT UNITS:
 
 -centimeters (cm)
@@ -26,6 +27,7 @@ PRINT UNITS:
 -picas (pc): 1pc is equal to 12pt.
 
 
+
 SCREEN UNITS:
 
 -pixel (px): 1px is equal to 0.75pt.
@@ -33,5 +35,4 @@ SCREEN UNITS:
 -"em" (em): An em is equal to the current font-size and a scable unit. (i.e. i ffont size = 12px then 1em = 12px).
 
 -percent (%): Similar to the em and also scalabe, the current font-size is equal to 100%. (i.e. 12pt = 100%).
-
 
