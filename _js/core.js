@@ -7,6 +7,7 @@ var pxlvznTools = {
     baselineFontSize: 14,
     // Function to handle UI events
     addEvent : function(obj, evType, fn) {
+        "use strict";
         if (obj.addEventListener) {
             obj.addEventListener(evType, fn, false);
             return true;
@@ -19,6 +20,7 @@ var pxlvznTools = {
     },
     // Font Unit Conversion Functionoints
     convertUnit : function() {
+        "use strict";
         // Baseline font unit is pixels
         var baselineFontSize = document.getElementById('baseline').value;
         // Number entered by the user
@@ -63,20 +65,26 @@ var pxlvznTools = {
                     break;
                 default:
                 // alert('Please select a font unit.')
-            };
+            }
         } else {
             document.getElementById('result').innerHTML = '<p class="error">Please enter a number, only.</p>';
-        };
+        }
     },
     // Function to clear input field of preset/default value and reset select menu index to zero.
     clearField : function() {
-        this.value === this.defaultValue ? this.value = '' : null;
+        "use strict";
+        if(this.value !== ''){
+            this.value = '';
+        }
         document.getElementById('formula').selectedIndex = 0;
         document.getElementById('baseline').selectedIndex = 0;
     },
     // Function to reset input field to preset/default value
     resetField : function() {
-        this.value === '' ? this.value = 'Enter a Number' : null;
+        "use strict";
+          if(this.value === ''){
+            this.value = 'Enter a Number';
+        }
     }
 };
 // Initialze functions to call upon user action(s)
