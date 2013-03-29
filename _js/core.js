@@ -1,8 +1,7 @@
 /**
  * @author PXLVZN
+ * @year 2013
  */
-
-// Namespace to avoid collisions
 var pxlvznTools = {
     addEvent : function(obj, evType, fn)
     {"use strict";
@@ -17,7 +16,6 @@ var pxlvznTools = {
             return false;
         }
     },
-    // Font Unit Conversion Functionoints
     convertUnit : function()
     {"use strict";
         var baselineFontSize = document.getElementById('baseline').value;
