@@ -6,17 +6,15 @@ Tool for converting screen font sizes from one unit (px, pt, em or %) to another
 
 NOTES:
 
--Pixel unit conversions use a baseline font size of 14px; as this is the default font size of most browsers/HTMLframeworks.
+1.) Pixel unit conversions use a baseline font size of 14px; as this is the default font size of most browsers/HTMLframeworks.
 
--Round up if the first decimel place is 5 or greater; NEVER round down.
+2.) Round up if the first decimel place is 5 or greater; NEVER round down.
 
--A pt is 1/72 of an in, and a px is 1/96 of an in. On screen everything is scaled to be consistent with a hypothetical 96 ppi device viewed at normal reading distance. Meaning that, on screens that differ significantly from 96 ppi or from normal reading distance, everything will be scaled but still maintain the same relationships.
+3.)  pt is 1/72 of an in, and a px is 1/96 of an in. On screen everything is scaled to be consistent with a hypothetical 96 ppi device viewed at normal reading distance. Meaning that, on screens that differ significantly from 96 ppi or from normal reading distance, everything will be scaled but still maintain the same relationships.
 
--DPI refers to print and PPI to pixel display. 
+4.) PI refers to print and PPI to pixel display. 
 
-
-
-PRINT UNITS (non-scaling):
+5.) PRINT UNITS (non-scaling):
 
 -centimeters (cm)
 
@@ -29,10 +27,9 @@ PRINT UNITS (non-scaling):
 -picas (pc): 1pc is equal to 12pt.
 
 
+6.) SCREEN UNITS:
 
-SCREEN UNITS:
-
--pixel (px): 1px is equal to 0.75px. Pixels don't scale with screen resolution.
+-pixel (px): 1px is equal to 0.75pt. Pixels don't scale with screen resolution.
 
 -"em" (em): An em is equal to the current font-size and a scable unit. (i.e. i ffont size = 12px then 1em = 12px).
 
