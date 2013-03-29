@@ -59,7 +59,7 @@ var pxlvznTools = {
                 // console.log('Please select a font unit.')
             }
         } else {
-            document.getElementById('result').innerHTML = '<p class="error">Please enter a number, only.</p>';
+            document.getElementById('result').innerHTML = '<p class="error">Please enter numbers only!</p>';
         }
     },
     clearField : function()

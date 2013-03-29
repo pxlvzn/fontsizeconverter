@@ -26,17 +26,6 @@
 }
 
 @font-face {
-    font-family: 'DejaVuSansBold';
-    src: url('../_fonts/DejaVuSans-Bold-webfont.eot');
-    src: local('☺'),url('../_fonts/DejaVuSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../_fonts/DejaVuSans-Bold-webfont.woff') format('woff'),
-         url('../_fonts/DejaVuSans-Bold-webfont.ttf') format('truetype'),
-         url('../_fonts/DejaVuSans-Bold-webfont.svg#DejaVuSansBold') format('svg');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
   font-family: 'PTMonoRegular';
   src: url('../_fonts/PTM55FT-webfont.eot');
   src: local('☺'), 

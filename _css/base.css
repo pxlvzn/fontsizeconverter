@@ -1,171 +1,224 @@
 @charset "UTF-8";
+
 /* =============================================================================
-   BASELINE CSS
-   ========================================================================== */
+ BASELINE CSS
+ ========================================================================== */
 /* RESET */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-    border:0;
-    margin:0;
-    padding:0
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, section, video, object {
-    display:block
+    display: block;
 }
 
 a img {
-    border:0
+    border: 0;
 }
 
 figure {
-    position:relative
+    position: relative;
 }
 
 figure img {
-    width:100%
+    width: 100%;
 }
 
 /* TAGS */
 * {
-    padding:0;
-    margin:0
+    padding: 0;
+    margin: 0;
 }
+
 html {
-    font-family:sans-serif;
-    -webkit-text-size-adjust:100%;
-    -ms-text-size-adjust:100%
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 body {
-    font-size:14px
-}
-
-fieldset {
-    border:1px solid silver;
-    margin:0 2px;
-    padding:.35em .625em .75em
+    font-size: 14px;
 }
 
 button, input, select, textarea {
-    font-family:inherit;
-    font-size:100%;
-    margin:0
+    font-size: 100%;
+    margin: 0;
 }
 
 button, input {
-    line-height:normal
+    line-height: normal;
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance:button;
-    cursor:pointer
+    -webkit-appearance: button;
+    cursor: pointer;
 }
 
 button[disabled], input[disabled] {
-    cursor:default
+    cursor: default;
 }
 
 input[type="checkbox"], input[type="radio"] {
-    box-sizing:border-box;
-    padding:0
-}
-
-input[type="search"] {
-    -webkit-appearance:textfield;
-    -moz-box-sizing:content-box;
-    -webkit-box-sizing:content-box;
-    box-sizing:content-box
-}
-
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance:none
+    box-sizing: border-box;
+    padding: 0;
 }
 
 textarea {
-    overflow:auto;
-    vertical-align:top
+    overflow: auto;
+    vertical-align: top;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 figure {
-    margin:0
+    margin: 0;
 }
 
 legend, button::-moz-focus-inner, input::-moz-focus-inner {
-    border:0;
-    padding:0
+    border: 0;
+    padding: 0;
 }
- /* =============================================================================
-    UTILITY CLASSES
-    ========================================================================== */
-    /* Positioning */
-    .clearfix:before,.clearfix:after{content:" ";display:table}
-    .clearfix:after{clear: both}
-    .clearfix{*zoom: 1}
-    .leftfloat{float:left}
-    .rightfloat{float:right}
-    .aligncenter{text-align:center}
-    .alignleft{text-align:left} 
-    .alignright{text-align:right}
-    .relative{position:relative}
-    .absolute{position:absolute}
-    .hide{display:none}
-    .show{display:block}
-    .showinline{display:inline-block}
-    
-    /* Margins */
-    .margin_auto{margin:0 auto}
-    
-    /* Text */
-    .mixedcase{text-transform:capitalize}
-    .uppercase{text-transform:uppercase}
-    .lowercase{text-transform:lowercase}
-    .normal{font-weight:400}
-    .bold{font-weight:700}
-    .italic{font-style:italic}
-    .bolditalic{font-weight:700;font-style:italic}
-    
-    /* Micellany */
-    .cursor_pointer{cursor:pointer}
-    .cursor_info{cursor:help}
 
 /* =============================================================================
-   CUSTOM CSS
-   ========================================================================== */
-   body {color:#252525;background-color:#fff;font-size:14px;font-family:sans-serif;overflow-y:scroll !important}
-   p {line-height:1.4}
-   hr {margin:15px 0;border:0;height:0;border-top: 1px solid rgba(0, 0, 0, 0.1);border-bottom: 1px solid rgba(255, 255, 255, 0.3)}
-   #pagewrapper {margin:auto 25px}
-   header#masthead {margin:0 0 20px 0;border-bottom:1px solid #000}
-   header#masthead h1 {font-family:'DejaVuSansBold', sans-serif;font-size:300%;}
-   #description {font-family:'DejaVuSansBook';font-size:114%;margin-bottom:10px}
-   .notes {color:#666;font-family:'DejaVuSansOblique',sans-serif;font-size:93%;}
-   section#sizeconverter{width:275px;padding:0 0 0 0;text-align:center}
-   section#sizeconverter input{width:265px;padding:8px 4px;margin:0 5px 10px 0;font-size:114%;font-family:'PTMonoRegular','courier',monospace;text-align:center;border:1px solid #ccc;border-radius:3px}
-   section#sizeconverter select {width:275px;margin-bottom:10px;padding:4px 4px 2px 4px;font-family:'PTMonoRegular','courier',monospace;}
-   section#sizeconverter #result {margin-bottom:10px;font-size:129%;font-weight:700;}
-   section#sizeconverter #result p{margin:0;color:#00a213}
-   section#sizeconverter #result p.error{margin:0;color:#ff0000}
-   section#sizeconverter button{margin-top:10px;padding:3px 4px 1px 4px;font-family:'PTMonoRegular','courier',monospace;font-weight:700;}
-   footer#footer {padding:0;margin-bottom:10px;font-size:86%;color:#000;font-weight:700}
-   footer#footer .symbl{font-size:100%}
-      
+ CUSTOM CSS
+ ========================================================================== */
+body {
+    background-color: #fff;
+    color: #252525;
+    overflow-y: scroll !important;
+}
+
+p {
+    line-height: 1.4;
+}
+
+hr {
+
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    height: 0;
+    margin: 15px 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.float_left {
+    float: left;
+}
+
+#pagewrapper {
+    margin: auto 25px;
+}
+
+#masthead {
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+#masthead h1 {
+    font-family: arial,sans-serif;
+    font-size: 300%;
+    margin-top: 15px;
+}
+
+p.description {
+    font-family: 'DejaVuSansBook';
+    font-size: 125%;
+    margin-top: 10px;
+}
+
+p.notes {
+    color: #666;
+    font-family: 'DejaVuSansOblique',sans-serif;
+    font-size: 93%;
+    margin: 5px 0;
+}
+
+#sizeconverter {
+    padding: 0 0 0 0;
+    text-align: center;
+    width: 275px;
+}
+
+#sizeconverter input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'PTMonoRegular','courier',monospace;
+    font-size: 114%;
+    margin: 0 5px 10px 0;
+    padding: 8px 4px;
+    text-align: center;
+    width: 265px;
+}
+
+#sizeconverter select {
+    font-family: 'PTMonoRegular','courier',monospace;
+    margin-bottom: 10px;
+    padding: 4px 4px 2px 4px;
+    width: 275px;
+}
+
+#sizeconverter #result {
+    font-size: 129%;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#sizeconverter #result p {
+    color: #00a213;
+    margin: 0;
+}
+
+#sizeconverter #result p.error {
+    color: #ff0000;
+    margin: 0;
+}
+
+#sizeconverter button.btn {
+    font-family: 'PTMonoRegular','courier',monospace;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 50px !important;
+}
+
+#footer {
+    color: #000;
+    font-size: 86%;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#footer .copyright {
+    margin-top: 10px;
+}
+
+#footer .symbl {
+    font-size: 100%;
+}
+
 /* =============================================================================
-   PRINT STYLES
-   ========================================================================== */
-@media print{
-    *{background:transparent !important;color:#444 !important;text-shadow:none}
-    a,a:visited{color:#444 !important;text-decoration:underline}
-    a:after{content:" (" attr(href) ")"}
-    abbr:after{content:" (" attr(title) ")"} 
-    .ir a:after{content:""}
-    pre,blockquote{border:1px solid #999;page-break-inside:avoid}
-    img{page-break-inside:avoid}
-    @page {margin: 0.5cm}
-    p,h2,h3{orphans:3;widows:3}
-    h2,h3{page-break-after:avoid}
+ PRINT STYLES
+ ========================================================================== */
+@media print {
+    #pagewrapper {
+        display: none
+    }
 }
