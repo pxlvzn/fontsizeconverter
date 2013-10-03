@@ -39,8 +39,7 @@ REFERENCE NOTES:
   - Percent (%): Similar to the em and also scalabe, the current font-size is equal to 100%. (i.e. 12pt = 100%).
 
 
-
-
+<br>
 
 
 GNU GENERAL PUBLIC LICENSE
