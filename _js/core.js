@@ -1,28 +1,38 @@
 /**
- * @author PXLVZN
- * @year 2013
+ * @fileoverview code for converting font size units.
+ * @author PXLVZN.
+ * @preserve 2013 All right reserved.
  */
-var pxlvznTools = {
-    addEvent : function(obj, evType, fn)
-    {"use strict";
+
+/**
+ * @namespace
+ */
+var pxlvznTools = {};
+
+/**
+ * @return {string} converted value.
+ */
+pxlvznTools = {
+    addEvent: function(obj, evType, fn)
+    {'use strict';
         if (obj.addEventListener) {
             obj.addEventListener(evType, fn, false);
             return true;
             // This is why we can't have nice things Microsoft!
         } else if (obj.attachEvent) {
-            var forIE = obj.attachEvent("on" + evType, fn);
+            var forIE = obj.attachEvent('on' + evType, fn);
             return forIE;
         } else {
             return false;
         }
     },
-    convertUnit : function()
-    {"use strict";
+    convertUnit: function()
+    {'use strict';
         var baselineFontSize = document.getElementById('baseline').value;
         var valueToConvert = document.getElementById('basesize').value;
         var convformula = document.getElementById('formula').value;
         if (valueToConvert > 0) {
-            switch(convformula) {
+            switch (convformula) {
                 case 'empercent':
                     // EM to Percent
                     document.getElementById('result').innerHTML = '<p>' + (valueToConvert * 100) + '&#37;</p>';
@@ -62,15 +72,15 @@ var pxlvznTools = {
             document.getElementById('result').innerHTML = '<p class="error">Please enter numbers only!</p>';
         }
     },
-    clearField : function()
-    {"use strict";
+    clearField: function()
+    {'use strict';
         if (this.value !== '') {
             this.value = '';
         }
         document.getElementById('formula').selectedIndex = 0;
     },
-    resetField : function()
-    {"use strict";
+    resetField: function()
+    {'use strict';
         if (this.value === '') {
             this.value = 'Enter a Number';
         }
