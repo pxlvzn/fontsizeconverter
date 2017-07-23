@@ -34,6 +34,6 @@ REFERENCE NOTES:
 
   - Pixel (px): 1px is equal to 0.75pt. Pixels don't scale with screen resolution.
 
-  - "em" (em): An em is equal to the current font-size and a scable unit. (i.e. i ffont size = 12px then 1em = 12px).
+  - EM (em): An em is equal to the current font-size and a scable unit. (e.g. if default font size = 12px then 1em = 12px).
 
-  - Percent (%): Similar to the em and also scalabe, the current font-size is equal to 100%. (i.e. 12pt = 100%).
+  - Percent (%): Similar to the em and also scalabe, the current font-size is equal to 100%. (e.g. 12pt = 100%).
