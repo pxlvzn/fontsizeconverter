@@ -7,9 +7,9 @@ Tool for converting screen font sizes from one unit (px, pt, em or %) to another
 
 ## REFERENCE NOTES:
 1. A point (pt) is 1/72 of an in, and a px is 1/96 of an in. On screen everything is scaled to be consistent with a hypothetical 96 ppi device viewed at normal reading distance. Meaning that, on screens that differ significantly from 96 ppi or from normal reading distance, everything will be scaled but still maintain the same relationships.
-2. DPI (Dots Per Inch) refers to print
-3. PPI (Pixels Per Inch) to screen.
-4. PRINT UNITS (non-scaling):
+2. DPI (*Dots Per Inch*) refers to print
+3. PPI (*Pixels Per Inch*) to screen.
+4. PRINT UNITS (*non-scaling*)):
 - Centimeters (cm)
 - Millimeters (mm)
 - Inches (in): 1in is equal to 2.54cm.
